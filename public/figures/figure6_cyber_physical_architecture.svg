@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0f172a; font-family:'Inter', system-ui, sans-serif;">
+  <text x="30" y="38" fill="#f8fafc" font-size="18" font-weight="800">FIGURE 6: 4-TIER CYBER-PHYSICAL SYSTEM &amp; TELEMETRY ARCHITECTURE</text>
+  <text x="30" y="60" fill="#94a3b8" font-size="11">Air-gapped industrial automation, deterministic PLC motion control, and local edge dispatch</text>
+
+  <!-- 4 Horizontal Tiers -->
+  <!-- Tier 1: Mechanical -->
+  <g transform="translate(50, 85)">
+    <rect width="860" height="75" rx="6" fill="#1e293b" stroke="#64748b"/>
+    <rect x="0" y="0" width="160" height="22" rx="4" fill="#334155"/>
+    <text x="10" y="15" fill="#cbd5e1" font-size="9" font-weight="700">TIER 1: PHYSICAL HARDWARE</text>
+    <text x="20" y="45" fill="#f8fafc" font-size="11" font-weight="600">Rotary Suction Feeder Head · 4-Plate Buckle Unit · Dual Cross-Fold Knives · Air Compressor</text>
+    <text x="20" y="62" fill="#94a3b8" font-size="10">High-torque brushless DC motors · Pepperl+Fuchs Ultrasonic Sensor · Sick Optical Gates</text>
+  </g>
+
+  <!-- Tier 2: Real-time PLC -->
+  <g transform="translate(50, 175)">
+    <rect width="860" height="75" rx="6" fill="#134e4a" stroke="#0d9488"/>
+    <rect x="0" y="0" width="200" height="22" rx="4" fill="#0f766e"/>
+    <text x="10" y="15" fill="#ccfbf1" font-size="9" font-weight="700">TIER 2: DETERMINISTIC PLC / MOTION</text>
+    <text x="20" y="45" fill="#f0fdfa" font-size="11" font-weight="600">Industrial PLC (Beckhoff TwinCAT / Siemens S7-1200) · 1 kHz Fast Control Loop</text>
+    <text x="20" y="62" fill="#a7f3d0" font-size="10">24V DC Digital I/O · 40ms Solenoid Valve Trigger · Linear Stepper Actuators · E-Stop Safety Relay</text>
+  </g>
+
+  <!-- Tier 3: Edge IoT Gateway -->
+  <g transform="translate(50, 265)">
+    <rect width="860" height="75" rx="6" fill="#1e1b4b" stroke="#6366f1"/>
+    <rect x="0" y="0" width="180" height="22" rx="4" fill="#3730a3"/>
+    <text x="10" y="15" fill="#e0e7ff" font-size="9" font-weight="700">TIER 3: IOT EDGE GATEWAY</text>
+    <text x="20" y="45" fill="#ffffff" font-size="11" font-weight="600">Industrial Edge Controller (Raspberry Pi CM4) · RS-485 Modbus RTU @ 50 Hz</text>
+    <text x="20" y="62" fill="#c7d2fe" font-size="10">Python Daemon · Real-time JSON Telemetry Cache · Anomaly Detection · Local MQTT Broker</text>
+  </g>
+
+  <!-- Tier 4: Local Application & Dispatch -->
+  <g transform="translate(50, 355)">
+    <rect width="860" height="75" rx="6" fill="#042f2e" stroke="#10b981"/>
+    <rect x="0" y="0" width="210" height="22" rx="4" fill="#065f46"/>
+    <text x="10" y="15" fill="#d1fae5" font-size="9" font-weight="700">TIER 4: AIR-GAPPED WEB APPLICATION</text>
+    <text x="20" y="45" fill="#ecfdf5" font-size="11" font-weight="600">FoldMaster Press OS (React 18 + Vite + Tailwind HMI) · Node.js Local Orchestrator</text>
+    <text x="20" y="62" fill="#6ee7b7" font-size="10">Air-Gapped Operation · Zero Content Archival · Cryptographic PIN RBAC · Publication SLA Tracker</text>
+  </g>
+
+  <!-- Side Security Callout -->
+  <rect x="740" y="30" width="170" height="40" rx="4" fill="#7f1d1d" stroke="#ef4444"/>
+  <text x="825" y="48" fill="#fee2e2" font-size="9" font-weight="800" text-anchor="middle">100% AIR-GAPPED</text>
+  <text x="825" y="62" fill="#fecaca" font-size="8" text-anchor="middle">Zero Internet Required</text>
+</svg>

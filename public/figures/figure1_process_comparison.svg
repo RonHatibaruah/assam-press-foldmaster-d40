@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="100%" style="background:#0f172a; font-family:'Inter', system-ui, sans-serif;">
+  <defs>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowTeal" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#14b8a6"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="30" y="40" fill="#f8fafc" font-size="20" font-weight="800">FIGURE 1: PROCESS COMPARISON — LEGACY BOTTLENECK VS. FOLDMASTER ASSAM</text>
+  <text x="30" y="65" fill="#94a3b8" font-size="12">Operational transformation for Assam Government Press (NESFIC-D-40)</text>
+
+  <!-- PANEL 1: LEGACY SETUP (RED ACCENT) -->
+  <g transform="translate(30, 95)">
+    <rect width="940" height="180" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <rect x="0" y="0" width="180" height="28" rx="8" fill="#7f1d1d"/>
+    <text x="12" y="19" fill="#fecaca" font-size="11" font-weight="700">CURRENT LEGACY PROCESS</text>
+
+    <!-- Step 1 -->
+    <rect x="25" y="45" width="150" height="75" rx="6" fill="#334155" stroke="#64748b"/>
+    <text x="35" y="68" fill="#f1f5f9" font-size="12" font-weight="700">Manual Paper Load</text>
+    <text x="35" y="86" fill="#94a3b8" font-size="10">Hand-fanning reams</text>
+    <text x="35" y="102" fill="#ef4444" font-size="9">Static cling &amp; curl</text>
+
+    <!-- Arrow 1 -->
+    <line x1="175" y1="82" x2="205" y2="82" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+    <!-- Step 2 -->
+    <rect x="210" y="45" width="155" height="75" rx="6" fill="#334155" stroke="#64748b"/>
+    <text x="220" y="68" fill="#f1f5f9" font-size="12" font-weight="700">Friction Rubber Feed</text>
+    <text x="220" y="86" fill="#94a3b8" font-size="10">Rubber wheel wear</text>
+    <text x="220" y="102" fill="#ef4444" font-size="9">Frequent wheel slip</text>
+
+    <!-- Arrow 2 -->
+    <line x1="365" y1="82" x2="395" y2="82" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+    <!-- Step 3 (BOTTLENECK) -->
+    <rect x="400" y="40" width="170" height="85" rx="6" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
+    <text x="412" y="64" fill="#fef2f2" font-size="12" font-weight="800">Double-Sheet Jam</text>
+    <text x="412" y="82" fill="#fecaca" font-size="10">Buckle plates jammed</text>
+    <text x="412" y="100" fill="#fca5a5" font-size="10" font-weight="700">LINE HALTS 15-25 MIN</text>
+    <text x="412" y="116" fill="#fee2e2" font-size="9">Manual hand extraction</text>
+
+    <!-- Arrow 3 -->
+    <line x1="570" y1="82" x2="600" y2="82" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+    <!-- Step 4 -->
+    <rect x="605" y="45" width="145" height="75" rx="6" fill="#334155" stroke="#64748b"/>
+    <text x="615" y="68" fill="#f1f5f9" font-size="12" font-weight="700">Manual Re-tuning</text>
+    <text x="615" y="86" fill="#94a3b8" font-size="10">Feeler gauge trial</text>
+    <text x="615" y="102" fill="#ef4444" font-size="9">High test sheet waste</text>
+
+    <!-- Arrow 4 -->
+    <line x1="750" y1="82" x2="780" y2="82" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+    <!-- Step 5 (Metrics) -->
+    <rect x="785" y="45" width="135" height="75" rx="6" fill="#1e1b4b" stroke="#ef4444"/>
+    <text x="795" y="66" fill="#f87171" font-size="11" font-weight="700">Output: 1,500 sh/hr</text>
+    <text x="795" y="84" fill="#fca5a5" font-size="10">Spoilage: 5.8 - 7.2%</text>
+    <text x="795" y="102" fill="#cbd5e1" font-size="9">Missed Gazette SLAs</text>
+
+    <!-- Summary strip -->
+    <rect x="25" y="135" width="895" height="28" rx="4" fill="#0f172a"/>
+    <text x="40" y="153" fill="#ef4444" font-size="11" font-weight="600">CRITICAL FLAWS: Mechanical drag marks on 54 GSM maplitho, high manual labor fatigue, unpredictable turnarounds.</text>
+  </g>
+
+  <!-- PANEL 2: FOLDMASTER MODERNIZED SETUP (TEAL ACCENT) -->
+  <g transform="translate(30, 305)">
+    <rect width="940" height="180" rx="10" fill="#1e293b" stroke="#0d9488" stroke-width="2"/>
+    <rect x="0" y="0" width="220" height="28" rx="8" fill="#0f766e"/>
+    <text x="12" y="19" fill="#ccfbf1" font-size="11" font-weight="700">FOLDMASTER ASSAM PROCESS</text>
+
+    <!-- Step 1 -->
+    <rect x="25" y="45" width="150" height="75" rx="6" fill="#134e4a" stroke="#14b8a6"/>
+    <text x="35" y="68" fill="#f0fdfa" font-size="12" font-weight="700">Rotary Vacuum Drum</text>
+    <text x="35" y="86" fill="#a7f3d0" font-size="10">Ionized air-blast separation</text>
+    <text x="35" y="102" fill="#5eead4" font-size="9">Continuous pallet lift</text>
+
+    <!-- Arrow 1 -->
+    <line x1="175" y1="82" x2="205" y2="82" stroke="#14b8a6" stroke-width="2" marker-end="url(#arrowTeal)"/>
+
+    <!-- Step 2 (NOVELTY) -->
+    <rect x="210" y="40" width="165" height="85" rx="6" fill="#042f2e" stroke="#2dd4bf" stroke-width="2"/>
+    <text x="220" y="64" fill="#5eead4" font-size="12" font-weight="800">Ultrasonic Sensor</text>
+    <text x="220" y="82" fill="#ccfbf1" font-size="10">0.01mm acoustic gating</text>
+    <text x="220" y="100" fill="#a7f3d0" font-size="9" font-weight="600">Pneumatic In-Flight Reject</text>
+    <text x="220" y="116" fill="#f0fdfa" font-size="8">Ejects in 40ms; No Line Stop</text>
+
+    <!-- Arrow 2 -->
+    <line x1="375" y1="82" x2="405" y2="82" stroke="#14b8a6" stroke-width="2" marker-end="url(#arrowTeal)"/>
+
+    <!-- Step 3 -->
+    <rect x="410" y="45" width="160" height="75" rx="6" fill="#134e4a" stroke="#14b8a6"/>
+    <text x="420" y="68" fill="#f0fdfa" font-size="12" font-weight="700">Auto Caliper Recipe</text>
+    <text x="420" y="86" fill="#a7f3d0" font-size="10">Motorized buckle stoppers</text>
+    <text x="420" y="102" fill="#5eead4" font-size="9">Changeover &lt; 45 seconds</text>
+
+    <!-- Arrow 3 -->
+    <line x1="570" y1="82" x2="600" y2="82" stroke="#14b8a6" stroke-width="2" marker-end="url(#arrowTeal)"/>
+
+    <!-- Step 4 -->
+    <rect x="605" y="45" width="150" height="75" rx="6" fill="#134e4a" stroke="#14b8a6"/>
+    <text x="615" y="68" fill="#f0fdfa" font-size="12" font-weight="700">16-Page Cross Knives</text>
+    <text x="615" y="86" fill="#a7f3d0" font-size="10">Dual electronic servos</text>
+    <text x="615" y="102" fill="#5eead4" font-size="9">Zero spine cracking</text>
+
+    <!-- Arrow 4 -->
+    <line x1="755" y1="82" x2="780" y2="82" stroke="#14b8a6" stroke-width="2" marker-end="url(#arrowTeal)"/>
+
+    <!-- Step 5 (Metrics) -->
+    <rect x="785" y="45" width="135" height="75" rx="6" fill="#022c22" stroke="#10b981" stroke-width="2"/>
+    <text x="795" y="66" fill="#34d399" font-size="11" font-weight="800">Output: 8,850+ sh/hr</text>
+    <text x="795" y="84" fill="#6ee7b7" font-size="10">Spoilage: &lt; 0.8%</text>
+    <text x="795" y="102" fill="#a7f3d0" font-size="9">OEE: 88.9% (Class A)</text>
+
+    <!-- Summary strip -->
+    <rect x="25" y="135" width="895" height="28" rx="4" fill="#0f172a"/>
+    <text x="40" y="153" fill="#2dd4bf" font-size="11" font-weight="600">DELIVERED VALUE: +440% higher throughput, 88% less waste, guaranteed legislative tabling deadlines.</text>
+  </g>
+</svg>
