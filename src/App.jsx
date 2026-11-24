@@ -15,7 +15,9 @@ import {
   Image,
   MapPin,
   Building,
-  UserCheck
+  UserCheck,
+  HelpCircle,
+  BookOpen
 } from 'lucide-react';
 
 import FoldSimulator from './components/FoldSimulator';
@@ -25,11 +27,13 @@ import CaliperCalculator from './components/CaliperCalculator';
 import MaintenanceOEE from './components/MaintenanceOEE';
 import ProposalViewer from './components/ProposalViewer';
 import FiguresGallery from './components/FiguresGallery';
+import TutorialModal from './components/TutorialModal';
 import { leadApplicant, supportingMaterial } from './data/proposalData';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('telemetry');
   const [isPowerOn, setIsPowerOn] = useState(true);
+  const [isTutorialOpen, setIsTutorialOpen] = useState(false);
 
   const tabs = [
     { id: 'telemetry', label: 'IoT Telemetry & Floor', icon: Activity, badge: '8,850 sh/hr' },
@@ -74,8 +78,19 @@ export default function App() {
               </div>
             </div>
 
-            {/* Right: Machine Live Status Badge & Grant Info */}
+            {/* Right: Machine Live Status Badge, Tutorial & Grant Info */}
             <div className="flex items-center gap-3">
+              {/* Tutorial / How to Use Guide Button */}
+              <button
+                onClick={() => setIsTutorialOpen(true)}
+                className="px-3 py-1.5 rounded-lg bg-teal-500/10 hover:bg-teal-500/20 text-teal-300 border border-teal-500/30 text-xs font-semibold flex items-center gap-1.5 shadow-sm transition group"
+                title="Application Tutorial & User Guide"
+              >
+                <BookOpen className="w-4 h-4 text-teal-400 group-hover:scale-110 transition-transform" />
+                <span>Tutorial</span>
+                <span className="hidden sm:inline text-[10px] text-teal-400 font-mono">Guide</span>
+              </button>
+
               <div className="hidden lg:flex flex-col text-right text-xs font-mono">
                 <div className="text-amber-400 font-bold">Grant: ₹40L Total</div>
                 <div className="text-teal-400 text-[10px]">Software/Engg: ₹20L</div>
@@ -143,6 +158,13 @@ export default function App() {
         {activeTab === 'maintenance' && <MaintenanceOEE />}
         {activeTab === 'proposal' && <ProposalViewer />}
       </main>
+
+      {/* Interactive Tutorial Modal */}
+      <TutorialModal
+        isOpen={isTutorialOpen}
+        onClose={() => setIsTutorialOpen(false)}
+        onSelectTab={(tabId) => setActiveTab(tabId)}
+      />
 
       {/* Comprehensive Sovereign Footer with Disclaimer & GEO Metadata */}
       <footer className="bg-slate-900 border-t border-slate-800 py-6 mt-auto">

@@ -1,65 +1,219 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0f172a; font-family:'Inter', system-ui, sans-serif;">
-  <text x="30" y="38" fill="#f8fafc" font-size="18" font-weight="800">FIGURE 10: ASSAM GOVERNMENT PRESS (BAMUNIMAIDAM, GUWAHATI) PILOT LAYOUT</text>
-  <text x="30" y="60" fill="#94a3b8" font-size="11">Shop floor mechanical integration, electrical drops, safety clearances, and production material flow</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" style="background:#ffffff;">
+  <defs>
+    
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.75"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#cbd5e1" stroke-width="1.25"/>
+    </pattern>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#94a3b8" opacity="0.3"/>
+    </pattern>
+    
+    <filter id="drop-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
 
-  <!-- Factory Floor Boundary -->
-  <rect x="50" y="90" width="860" height="340" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <!-- Technical Background Grid -->
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
   
-  <!-- Section 1: Sheetfed Offset Press Hall (Left) -->
-  <g transform="translate(70, 115)">
-    <rect width="230" height="290" rx="6" fill="#0f172a" stroke="#64748b" stroke-dasharray="3 2"/>
-    <text x="115" y="30" fill="#94a3b8" font-size="11" font-weight="700" text-anchor="middle">OFFSET PRINTING HALL</text>
-    <rect x="30" y="60" width="170" height="80" rx="4" fill="#334155" stroke="#64748b"/>
-    <text x="115" y="105" fill="#f1f5f9" font-size="10" font-weight="600" text-anchor="middle">Sheetfed Offset Press #1</text>
-    <rect x="30" y="160" width="170" height="80" rx="4" fill="#334155" stroke="#64748b"/>
-    <text x="115" y="205" fill="#f1f5f9" font-size="10" font-weight="600" text-anchor="middle">Sheetfed Offset Press #2</text>
+    <!-- Master Header -->
+    <rect x="40" y="30" width="1520" height="90" rx="12" fill="#0f172a" filter="url(#drop-shadow)"/>
+    <rect x="40" y="30" width="8" height="90" rx="4" fill="#0ea5e9"/>
     
-    <!-- Printed Pallet Output -->
-    <rect x="180" y="250" width="40" height="30" fill="#f59e0b" opacity="0.6"/>
-    <text x="200" y="270" fill="#ffffff" font-size="8" text-anchor="middle">Pallets</text>
-  </g>
-
-  <!-- Material Transfer Arrow 1 -->
-  <path d="M 290 265 L 340 265" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4 2"/>
-
-  <!-- Section 2: Proposed FoldMaster Installation Bay (Center) -->
-  <g transform="translate(350, 115)">
-    <rect width="280" height="290" rx="6" fill="#042f2e" stroke="#10b981" stroke-width="2"/>
-    <text x="140" y="30" fill="#34d399" font-size="12" font-weight="800" text-anchor="middle">PROPOSED FOLDMASTER BAY</text>
-    <text x="140" y="46" fill="#a7f3d0" font-size="9" text-anchor="middle">(Footprint: 3.8m x 1.6m)</text>
-
-    <!-- FoldMaster Machine Outline -->
-    <rect x="30" y="70" width="220" height="150" rx="6" fill="#0f766e" stroke="#2dd4bf" stroke-width="2"/>
-    <text x="140" y="110" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">FoldMaster-16</text>
-    <text x="140" y="128" fill="#ccfbf1" font-size="9" text-anchor="middle">Automated Suction Cross-Folder</text>
-    <text x="140" y="145" fill="#fef08a" font-size="9" font-weight="700" text-anchor="middle">8,850 sheets/hr</text>
-
-    <!-- Machine Utility Connections -->
-    <circle cx="50" cy="190" r="8" fill="#e11d48"/>
-    <text x="65" y="193" fill="#fda4af" font-size="8">415V 3-Phase</text>
+    <text x="65" y="62" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" letter-spacing="2">
+      STREAM 1 · NESFIC-D-40 · SHOP FLOOR BLUEPRINT · FIGURE 10
+    </text>
+    <text x="65" y="94" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" letter-spacing="0.5">
+      SHOP-FLOOR RETROFIT & POST-PRESS CELL LAYOUT
+    </text>
+    <text x="65" y="112" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8">
+      Optimized 85 m² Cellular Plant Blueprint for Assam Government Press (Bamunimaidam, Guwahati)
+    </text>
     
-    <circle cx="150" cy="190" r="8" fill="#0284c7"/>
-    <text x="165" y="193" fill="#7dd3fc" font-size="8">6-Bar Pneumatic</text>
+    <!-- Top Right Meta Badges -->
+    <rect x="1330" y="48" width="210" height="54" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="1435" y="70" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#38bdf8" text-anchor="middle">
+      ASSAM GOVT PRESS
+    </text>
+    <text x="1435" y="88" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">
+      Bamunimaidam, Guwahati
+    </text>
+    
+  
+    <g transform="translate(40, 150)">
+      <rect width="1520" height="520" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+      <path d="M 0 10 Q 0 0 10 0 L 1510 0 Q 1520 0 1520 10 L 1520 40 L 0 40 Z" fill="#0f172a"/>
+      <text x="25" y="26" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#38bdf8">
+        ASSAM GOVERNMENT PRESS POST-PRESS MODERNIZATION CELL (85 m² INTEGRATED FOOTPRINT)
+      </text>
 
-    <!-- Operator Access Zone -->
-    <rect x="20" y="240" width="240" height="30" rx="4" fill="#0f172a" stroke="#10b981" stroke-dasharray="2 2"/>
-    <text x="140" y="260" fill="#6ee7b7" font-size="9" text-anchor="middle">Operator Ergonomic Safety Zone</text>
-  </g>
+      <!-- Cell Stages in Floor Plan -->
+      <!-- Bay 1: Pallet Conditioning -->
+      <g transform="translate(30, 65)">
+        <rect width="200" height="340" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="100" y="35" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">
+          ZONE 1: INFEED
+        </text>
+        <text x="100" y="60" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Pallet Staging</text>
+        <rect x="25" y="80" width="150" height="180" rx="4" fill="#e2e8f0" stroke="#cbd5e1"/>
+        <text x="100" y="165" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569" text-anchor="middle">
+          Forklift Drop
+        </text>
+        <text x="100" y="185" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">
+          Printed Pallets
+        </text>
+        <rect x="20" y="280" width="160" height="40" rx="4" fill="#f0f9ff" stroke="#7dd3fc"/>
+        <text x="100" y="305" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#0369a1" text-anchor="middle">
+          RH Buffer Zone
+        </text>
+      </g>
 
-  <!-- Material Transfer Arrow 2 -->
-  <path d="M 620 200 L 670 200" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="4 2"/>
+      <!-- Unit 2: Rotary Vacuum Feeder -->
+      <g transform="translate(260, 65)">
+        <rect width="220" height="340" rx="6" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.5"/>
+        <text x="110" y="35" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">
+          ZONE 2: VACUUM FEEDER
+        </text>
+        <text x="110" y="60" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#0284c7" text-anchor="middle">Rotary Suction Head</text>
+        <circle cx="110" cy="150" r="50" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+        <text x="110" y="155" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">
+          -0.65 bar
+        </text>
+        <rect x="25" y="225" width="170" height="40" rx="4" fill="#f5f3ff" stroke="#c4b5fd"/>
+        <text x="110" y="250" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#6d28d9" text-anchor="middle">
+          5.2 kV Ionizer Bar
+        </text>
+        <rect x="20" y="280" width="180" height="40" rx="4" fill="#f0fdf4" stroke="#86efac"/>
+        <text x="110" y="305" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d" text-anchor="middle">
+          300 kHz Sensor Head
+        </text>
+      </g>
 
-  <!-- Section 3: Binding & Stitching Section (Right) -->
-  <g transform="translate(680, 115)">
-    <rect width="210" height="290" rx="6" fill="#0f172a" stroke="#64748b" stroke-dasharray="3 2"/>
-    <text x="105" y="30" fill="#94a3b8" font-size="11" font-weight="700" text-anchor="middle">POST-PRESS BINDERY</text>
+      <!-- Unit 3: 4-Plate Buckle Section -->
+      <g transform="translate(510, 65)">
+        <rect width="220" height="340" rx="6" fill="#ecfdf5" stroke="#86efac" stroke-width="1.5"/>
+        <text x="110" y="35" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857" text-anchor="middle">
+          ZONE 3: BUCKLE UNIT
+        </text>
+        <text x="110" y="60" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#059669" text-anchor="middle">4 Automatic Plates</text>
+        <rect x="30" y="90" width="160" height="120" rx="4" fill="#d1fae5" stroke="#6ee7b7"/>
+        <text x="110" y="145" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#065f46" text-anchor="middle">
+          Dual Parallel Folds
+        </text>
+        <text x="110" y="165" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#047857" text-anchor="middle">
+          Stepper Calibrated
+        </text>
+        <rect x="20" y="280" width="180" height="40" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="110" y="305" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">
+          +/- 0.01 mm Steppers
+        </text>
+      </g>
 
-    <rect x="25" y="70" width="160" height="70" rx="4" fill="#334155" stroke="#64748b"/>
-    <text x="105" y="110" fill="#f1f5f9" font-size="10" font-weight="600" text-anchor="middle">Gathering &amp; Collator</text>
+      <!-- Unit 4: Right-Angle Cross-Carrier -->
+      <g transform="translate(760, 65)">
+        <rect width="220" height="340" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+        <text x="110" y="35" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">
+          ZONE 4: 90° CARRIER
+        </text>
+        <text x="110" y="60" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#b45309" text-anchor="middle">Right-Angle Transfer</text>
+        <path d="M 50 120 L 150 120 Q 170 120 170 140 L 170 210" fill="none" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
+        <text x="110" y="250" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">
+          Optical Alignment
+        </text>
+        <rect x="20" y="280" width="180" height="40" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="110" y="305" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">
+          Spine Micro-Slitting
+        </text>
+      </g>
 
-    <rect x="25" y="160" width="160" height="70" rx="4" fill="#334155" stroke="#64748b"/>
-    <text x="105" y="200" fill="#f1f5f9" font-size="10" font-weight="600" text-anchor="middle">Perfect Binding &amp; Stitching</text>
+      <!-- Unit 5: Mechatronic Knife -->
+      <g transform="translate(1010, 65)">
+        <rect width="220" height="340" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+        <text x="110" y="35" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">
+          ZONE 5: SERVO KNIFE
+        </text>
+        <text x="110" y="60" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Dual Mechatronic Knives</text>
+        <rect x="30" y="90" width="160" height="120" rx="4" fill="#e2e8f0" stroke="#94a3b8"/>
+        <text x="110" y="145" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">
+          16-Page Cross-Fold
+        </text>
+        <text x="110" y="165" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">
+          12,000 sh/hr Servo
+        </text>
+        <rect x="20" y="280" width="180" height="40" rx="4" fill="#f0fdf4" stroke="#86efac"/>
+        <text x="110" y="305" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d" text-anchor="middle">
+          +/- 0.25 mm Accuracy
+        </text>
+      </g>
 
-    <text x="105" y="265" fill="#34d399" font-size="9" font-weight="700" text-anchor="middle">To Dispatch / Gazette Vault</text>
-  </g>
+      <!-- Unit 6: Shingle Delivery Table -->
+      <g transform="translate(1260, 65)">
+        <rect width="230" height="340" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+        <text x="115" y="35" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">
+          ZONE 6: SHINGLE OUTPUT
+        </text>
+        <text x="115" y="60" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#047857" text-anchor="middle">Automated Batch Stream</text>
+        <rect x="25" y="90" width="180" height="120" rx="4" fill="#dcfce7" stroke="#86efac"/>
+        <text x="115" y="145" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#065f46" text-anchor="middle">
+          Collation Table
+        </text>
+        <text x="115" y="165" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#15803d" text-anchor="middle">
+          Signature Counter
+        </text>
+        <rect x="20" y="280" width="190" height="40" rx="4" fill="#047857"/>
+        <text x="115" y="305" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">
+          To Binding Hall
+        </text>
+      </g>
+
+      <!-- Floor Plan Annotation Strip -->
+      <rect x="30" y="430" width="1460" height="60" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+      <text x="50" y="465" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">
+        FACILITY COMPLIANCE: Bamunimaidam Main Press Hall · 85 m² Total Cellular Footprint · ISO 9001:2015 Lean Workflow
+      </text>
+    </g>
+
+    <!-- Bottom Metric Strip -->
+    <g transform="translate(40, 695)">
+      <rect width="1520" height="130" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+      <text x="30" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">
+        SHOP-FLOOR RETROFIT &amp; WORKFLOW METRICS
+      </text>
+
+      <g transform="translate(30, 45)">
+        <rect width="345" height="65" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#15803d">Total Cellular Footprint</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#047857">85 m² Compact Layout</text>
+      </g>
+      <g transform="translate(405, 45)">
+        <rect width="345" height="65" rx="6" fill="#f0f9ff" stroke="#bae6fd"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#0369a1">Material Handling Transit</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#0284c7">65% Distance Reduced</text>
+      </g>
+      <g transform="translate(780, 45)">
+        <rect width="345" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Operator Staffing Needed</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">1 Operator + 1 Helper</text>
+      </g>
+      <g transform="translate(1155, 45)">
+        <rect width="335" height="65" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#15803d">Safety &amp; Sound Insulation</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#047857">&lt; 74 dBA Polycarbonate</text>
+      </g>
+    </g>
+    
+  
+    <!-- Sovereign Footer Attribution -->
+    <rect x="40" y="845" width="1520" height="35" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="60" y="867" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">
+      ROJES LABS · LEAD APPLICANT: ABHISEKH SAHARIA · GRANT: ₹40.0L TOTAL (SOFTWARE/ENGG: ₹20.0L)
+    </text>
+    <text x="1540" y="867" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="end">
+      TECHNOLOGY READINESS LEVEL: TRL-7 · OPERATIONAL AT 12,000 SHEETS/HR · © 2026 ROJES LABS
+    </text>
+    
 </svg>

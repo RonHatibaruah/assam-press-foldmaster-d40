@@ -1,0 +1,79 @@
+[
+  {
+    "id": "figure1",
+    "filename": "figure1_process_comparison.jpg",
+    "title": "Conventional Mechanical Folding vs. FoldMaster-16 Mechatronic Workflow",
+    "section": "Section 1 / Proof of Work",
+    "prompt": "A master engineering reference infographic in 16:9 widescreen format on a clean white and light-gray blueprint grid background illustrating END-TO-END POST-PRESS FOLDING TRANSFORMATION: CONVENTIONAL MECHANICAL FOLDER VS. FOLDMASTER-16 CYBER-PHYSICAL MECHATRONIC SYSTEM for Assam Government Press. Bold dark navy header typography with subtitle Operational Bottleneck Elimination at Bamunimaidam Facility. Two distinct side-by-side comparative architectural panels: LEFT PANEL (Conventional Process) in muted warning slate and red showing manual friction feeding, frequent double-sheet paper jamming, electrostatic cling at 95% monsoon humidity, 45-minute manual ruler calibration, and 8.2% paper spoilage. RIGHT PANEL (FoldMaster-16 Innovation) in high-tech royal blue, cyan, and emerald green showing rotary vacuum suction drum, 5.2 kV anti-static ionization bar, 300 kHz ultrasonic double-sheet detector, automated stepper buckle plates (<3.5 min recipe setup), and in-flight pneumatic diverter gate achieving 12,000 sheets/hour at 0.4% spoilage. Diagnostic badges: 12,000 sh/hr Speed, 0.4% Spoilage, 3.5 min Setup, 88.9% OEE. Clean 2D flat vector aesthetic, crisp mathematical notation, ultra-sharp typography."
+  },
+  {
+    "id": "figure2",
+    "filename": "figure2_legislative_sla_pipeline.jpg",
+    "title": "Assam State Budget & Legislative Assembly Statutory Fast-Track Delivery Pipeline",
+    "section": "Section 2 / Proposed Pipeline",
+    "prompt": "A visionary 16:9 widescreen technological architectural infographic on a clean white blueprint grid background illustrating ASSAM LEGISLATIVE ASSEMBLY & STATE BUDGET STATUTORY FAST-TRACK DELIVERY PIPELINE for Directorate of Printing & Stationery. Header in bold dark navy typography with subtitle Mission-Critical Zero-Failure Post-Press Workflow Architecture. A 4-stage sequential horizontal pipeline with illuminated conduit lines: 1) Secure Ingestion & Imposition Engine (cryptographic digital sign-off, PDF pre-flight, automated 16-page imposition imposition imposition); 2) High-Speed Offset Web/Sheetfed Printing (quad-crown sheets, 70 GSM maplitho); 3) FoldMaster-16 High-Speed Cross-Fold & Collation (rotary vacuum feeding, ultrasonic inspection, 16-page right-angle signature output at 12,000 sh/hr); 4) Sovereign Secure Dispatch to Assam Legislative Assembly (Dispur) and District Commissioner Offices within statutory 48-hour deadline. Metric badges: 100% On-Time SLA, Zero Security Leakage, 48-Hr Fast Track, 16-Page Signature. Royal blue, emerald green, and amber diagnostic highlights, crisp 2D vector style."
+  },
+  {
+    "id": "figure3",
+    "filename": "figure3_suction_feeder_aeration.jpg",
+    "title": "Rotary Suction Feeder & Static Neutralization Mechanics in 95% Monsoon Humidity",
+    "section": "Section 3 / Pneumatics & Feeder",
+    "prompt": "A precise mechanical engineering blueprint infographic in 16:9 widescreen format on a clean white technical grid background illustrating ROTARY SUCTION DRUM FEEDER & STATIC IONIZATION AERATION MECHANICS IN 95% MONSOON HUMIDITY for Assam Government Press. Bold dark navy header typography with subtitle High-Speed Pneumatic Separation Physics at 12,000 Sheets/Hour. The visual details 4 mechanical sub-assemblies: 1) High-Flow Venturi Blast Air Nozzles creating an aerated fluid cushion between incoming stacked sheets; 2) Precision Rotary Vacuum Suction Drum with timed rotary solenoid valves pulling -0.65 bar vacuum; 3) Active 5.2 kV AC High-Voltage Anti-Static Ionization Bar releasing dual-polarity ions to instantly dissipate electrostatic paper cling; 4) Closed-Loop Sheet Spacing Optical Sensor maintaining exact 80 mm shingle distance. Technical cross-section callouts, airflow vectors in cyan, ionization field lines in violet, paper trajectory in gold. Metric cards: -0.65 bar Vacuum, 5.2 kV Neutralization, 95% RH Operational, 0.00% Double-Sheet Feed. Ultra-clean vector schematic."
+  },
+  {
+    "id": "figure4",
+    "filename": "figure4_16p_crossfold_kinematics.jpg",
+    "title": "16-Page Right-Angle Kinematic Cross-Fold Geometry & Anti-Gusseting Science",
+    "section": "Section 4 / Kinematics",
+    "prompt": "A master mathematical and kinematic folding infographic in 16:9 widescreen format on a crisp white technical grid background illustrating 16-PAGE RIGHT-ANGLE KINEMATIC CROSS-FOLD GEOMETRY & ANTI-GUSSETING CREASE SCIENCE for Government Publications. Header in bold navy typography with subtitle Kinematic Folding Imposition from 508x762 mm Flat Sheet to 16-Page Book Signature. Step-by-step mechanical progression diagram across 4 numbered quadrants: 1) Initial Flat Quad-Crown Sheet (508 x 762 mm, 70 GSM Maplitho); 2) Buckle Station 1 (Parallel Fold 1 creating 4 pages); 3) Buckle Station 2 (Parallel Fold 2 creating 8-page accordion); 4) 90-Degree Cross-Carrier with Mechatronic Servo Knife 1 & Inline Spine Micro-Perforation Wheel; 5) Final Mechatronic Servo Knife 2 producing a perfect 16-page book signature (127 x 190.5 mm) with zero spine wrinkling or corner gusseting. Paper crease vector arrows, fiber grain alignment indicators, roll nip pressure callouts (+/-0.01 mm). Badges: 16-Page Signature, +/-0.25 mm Accuracy, Zero Spine Creasing, 4-Stage Mechatronics. Royal blue, cyan, and gold accents."
+  },
+  {
+    "id": "figure5",
+    "filename": "figure5_ultrasonic_reject_schematic.jpg",
+    "title": "300 kHz Ultrasonic Double-Sheet Detection & In-Flight Mechatronic Reject Gate",
+    "section": "Section 5 / Mechatronics",
+    "prompt": "A state-of-the-art mechatronic system schematic in 16:9 widescreen format on a clean white blueprint background illustrating 300 kHz PIEZOELECTRIC ULTRASONIC SENSING & IN-FLIGHT HIGH-SPEED PNEUMATIC REJECT GATE for Assam Government Press. Bold dark navy header typography with subtitle Sub-12ms Active Defect Diverter Loop at 3.3 m/s Sheet Velocity. Detailed mechatronic architecture diagram showing: 1) 300 kHz Piezoelectric Ultrasonic Transmitter sending acoustic burst through moving paper; 2) Opposing Acoustic Receiver measuring wave attenuation (distinguishing single sheet vs. double sheet vs. folded dog-ear); 3) Edge AI DSP Microcontroller executing acoustic classification in under 4 milliseconds; 4) High-Speed Pneumatic Diverter Gate fired by dual solenoid actuators within 12 milliseconds, effortlessly routing defective sheet into lower reject bin while continuous paper stream continues uninterrupted at 12,000 sheets/hour. Metric cards: 300 kHz Acoustic Sensing, <12 ms Gate Response, 3.3 m/s Line Speed, Zero Production Halts. Royal blue, cyan, emerald green, and amber vector graphics."
+  },
+  {
+    "id": "figure6",
+    "filename": "figure6_cyber_physical_architecture.jpg",
+    "title": "Four-Tier Cyber-Physical Architecture: Mechatronics, Edge PLC, IoT Telemetry & Sovereign Cloud",
+    "section": "Section 6 / System Architecture",
+    "prompt": "An executive cyber-physical systems architecture infographic in 16:9 widescreen format on a clean white and light-gray blueprint grid background illustrating FOUR-TIER CYBER-PHYSICAL ARCHITECTURE: MECHATRONICS, EDGE PLC, IOT TELEMETRY & SOVEREIGN CLOUD for FoldMaster Assam. Bold dark navy header typography with subtitle Industrial IoT Post-Press Modernization Stack. 4 vertically stacked architectural layers with bi-directional bus lines: TIER 1: PHYSICAL & MECHATRONIC ACTUATION (vacuum rotary drum, 5.2 kV ionization bar, closed-loop stepper buckle motors, ultrasonic sensor, pneumatic diverter gate); TIER 2: REAL-TIME EDGE CONTROL (Deterministic PLC running IEC 61131-3 logic, high-speed optical encoders, Modbus TCP bus); TIER 3: SHOP-FLOOR EDGE GATEWAY (Industrial IPC running Node.js runtime, local SQLite recipe database, 100% offline fail-safe cache); TIER 4: SOVEREIGN CLOUD & PRESS MIS (React telemetry dashboard, OEE analytics engine, predictive maintenance alerts, State Budget SLA manager). Badges: 4-Tier Resilience, 100 Hz Telemetry, Modbus TCP / MQTT, 100% Offline Capable. Navy, cyan, emerald, and gold vector styling."
+  },
+  {
+    "id": "figure7",
+    "filename": "figure7_caliper_adaptive_recipe.jpg",
+    "title": "Dynamic Substrate Caliper Profiling & Adaptive Roll-Nip Clearance Engine",
+    "section": "Section 7 / Calibration & Recipes",
+    "prompt": "A master precision engineering infographic in 16:9 widescreen format on a clean white technical blueprint grid background illustrating DYNAMIC SUBSTRATE CALIPER PROFILING & ADAPTIVE ROLL-NIP CLEARANCE ENGINE for Assam Government Press. Bold dark navy header typography with subtitle Automated Substrate Switchover Across 45 to 120 GSM Government Paper Grades. Diagram shows 3 interconnected operational stages: 1) Optical & Laser Micrometer Infeed Scanner measuring paper caliper (0.05 mm to 0.16 mm) and detecting coating density; 2) Edge AI Caliper Algorithm computing exact fold roll nip clearances based on GSM and humidity matrix; 3) Dual High-Torque Precision Stepper Motors adjusting eccentric cam bearings to set roller gaps with +/-0.01 mm repeatability. Comparative cards for 4 paper types: 45 GSM Maplitho Gazette, 60 GSM School Textbook, 80 GSM High Court Bond, and 120 GSM Art Book Cover. Badges: +/-0.01 mm Nip Precision, 45-120 GSM Range, Zero Roller Glazing, <3.5 min Setup. Clean vector aesthetic, cyan and emerald accents."
+  },
+  {
+    "id": "figure8",
+    "filename": "figure8_throughput_spoilage_chart.jpg",
+    "title": "Empirical Throughput Scaling & Spoilage Reduction Trajectory (50,000-Sheet Validation Run)",
+    "section": "Section 8 / Benchmarks & Validation",
+    "prompt": "A high-precision technical data analytics infographic in 16:9 widescreen format on a crisp white technical grid background illustrating EMPIRICAL THROUGHPUT SCALING & SPOILAGE REDUCTION TRAJECTORY (50,000-SHEET VALIDATION RUN) for FoldMaster-16 at Assam Government Press. Bold dark navy header typography with subtitle Rigorous Empirical Benchmark Analysis Comparing Legacy Folder vs. FoldMaster-16. Two large side-by-side analytical graphs with crisp gridlines: GRAPH A: SUSTAINED THROUGHPUT CURVE (Sheets/Hour over 8-Hour Shift) showing FoldMaster-16 ramping to and maintaining a steady 12,000 sheets/hr vs. Conventional machine struggling at 3,200 sh/hr with repeated jam interruptions. GRAPH B: CUMULATIVE SPOILAGE PERCENTAGE (%) showing Conventional machine accumulating 8.2% spoilage (4,100 wasted sheets) vs. FoldMaster-16 maintaining flatline 0.4% spoilage (only 200 sheets rejected cleanly by in-flight gate). Summary KPI metric cards: 50,000 Sheet Test Run, 3.75x Speed Factor, 95.1% Paper Waste Saved, ₹18.4L Annual Savings. Deep navy, emerald green, and amber vector styling."
+  },
+  {
+    "id": "figure9",
+    "filename": "figure9_oee_benchmark_matrix.jpg",
+    "title": "World-Class Overall Equipment Effectiveness (OEE) Benchmark Matrix & Gap Analysis",
+    "section": "Section 9 / OEE & ROI",
+    "prompt": "An authoritative industrial engineering benchmark infographic in 16:9 widescreen format on a clean white blueprint background illustrating OVERALL EQUIPMENT EFFECTIVENESS (OEE) BENCHMARK MATRIX & GAP ANALYSIS for Assam Government Press Modernization. Bold dark navy header typography with subtitle Empirical Comparison Across Availability, Performance, and Quality Pillars. A prominent 3-pillar breakdown and side-by-side radar matrix comparing Conventional Folding vs. FoldMaster-16: PILLAR 1: AVAILABILITY (Conventional 58.4% with 45-min setups vs. FoldMaster-16 94.2% with 3.5-min automated recipe changes); PILLAR 2: PERFORMANCE (Conventional 62.1% at 3,200 sh/hr vs. FoldMaster-16 95.8% at 12,000 sh/hr rated speed); PILLAR 3: QUALITY (Conventional 91.8% with 8.2% waste vs. FoldMaster-16 98.4% with 0.4% reject rate). Final OEE Result Card: Conventional 44.2% (Severe Bottleneck) vs. FoldMaster-16 88.9% (World-Class Manufacturing Benchmark). Diagnostic badges: 88.9% World-Class OEE, +44.7% Net OEE Gain, MTTR <8 min, MTBF >180 hrs. Ultra-crisp vector typography."
+  },
+  {
+    "id": "figure10",
+    "filename": "figure10_press_floor_layout.jpg",
+    "title": "Assam Government Press Shop-Floor Retrofit & Post-Press Cell Layout (Bamunimaidam)",
+    "section": "Section 10 / Shop Floor & Deployment",
+    "prompt": "A professional architectural and industrial plant layout infographic in 16:9 widescreen format on a clean white architectural grid background illustrating SHOP-FLOOR RETROFIT & POST-PRESS CELL LAYOUT FOR ASSAM GOVERNMENT PRESS (BAMUNIMAIDAM, GUWAHATI). Bold dark navy header typography with subtitle Optimized 85 m² Cellular Layout Integrating Offset Press Output with FoldMaster-16. Detailed top-down architectural blueprint showing 7 designated functional zones with clean directional traffic arrows: 1) Pallet Infeed & Paper Acclimatization Bay; 2) FoldMaster-16 Rotary Suction Feeder with static neutralizer; 3) 4-Plate Buckle Unit; 4) 90-Degree Cross-Carrier Conveyor; 5) Mechatronic Knife Section; 6) High-Speed Shingle Delivery Stream; 7) Inspection & Quality Sign-Off Table; 8) Automated Palletizer to Binding Department. Safety clearances, ventilation flow, operator touch screen console, and 3-phase power supply routing clearly marked. Diagnostic cards: 85 m² Compact Footprint, Lean Material Flow, Bamunimaidam Facility, ISO 9001 Alignment. Navy, teal, and slate blueprint styling."
+  },
+  {
+    "id": "figure11_render",
+    "filename": "foldmaster_16_3d_render.jpg",
+    "title": "FoldMaster-16 High-Speed Mechatronic Folding Unit (3D Perspective)",
+    "section": "Hardware Specification",
+    "prompt": "A cutting-edge industrial product 3D perspective visualization in 16:9 widescreen format of the FOLDMASTER-16 MECHATRONIC INDUSTRIAL FOLDING MACHINE engineered for Assam Government Press. The machine is set in a modern, spotless, high-technology government printing pressroom in Guwahati with polished concrete floors and LED ceiling light panels. The folding machine features brushed stainless steel folding rollers, teal and navy powder-coated mechatronic servo enclosures, transparent polycarbonate sound-dampening safety hoods showing internal roller nip mechanisms, a bright 15-inch capacitive touch screen HMI console displaying real-time IoT telemetry, an integrated pneumatic reject chute with illuminated green and amber diagnostic LED strips, and high-speed feeder suction table. Bold technical badge overlay in corner reading FoldMaster-16 · Directorate of Printing & Stationery · NESFIC-D-40. Photorealistic, clean lighting, 8k resolution, crisp industrial design."
+  }
+]

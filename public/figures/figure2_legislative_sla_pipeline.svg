@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" style="background:#ffffff;">
+  <defs>
+    
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.75"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#cbd5e1" stroke-width="1.25"/>
+    </pattern>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#94a3b8" opacity="0.3"/>
+    </pattern>
+    
+    <filter id="drop-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Technical Background Grid -->
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
+  
+    <!-- Master Header -->
+    <rect x="40" y="30" width="1520" height="90" rx="12" fill="#0f172a" filter="url(#drop-shadow)"/>
+    <rect x="40" y="30" width="8" height="90" rx="4" fill="#0ea5e9"/>
+    
+    <text x="65" y="62" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" letter-spacing="2">
+      STREAM 1 · NESFIC-D-40 · STATUTORY DELIVERY · FIGURE 2
+    </text>
+    <text x="65" y="94" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" letter-spacing="0.5">
+      LEGISLATIVE ASSEMBLY & STATE BUDGET STATUTORY DELIVERY PIPELINE
+    </text>
+    <text x="65" y="112" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8">
+      Mission-Critical Fast-Track Post-Press Workflow Architecture for the Directorate of Printing & Stationery
+    </text>
+    
+    <!-- Top Right Meta Badges -->
+    <rect x="1330" y="48" width="210" height="54" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="1435" y="70" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#38bdf8" text-anchor="middle">
+      ASSAM GOVT PRESS
+    </text>
+    <text x="1435" y="88" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">
+      Bamunimaidam, Guwahati
+    </text>
+    
+  
+    <g transform="translate(40, 150)">
+      <!-- Stage 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="360" height="520" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <path d="M 0 10 Q 0 0 10 0 L 350 0 Q 360 0 360 10 L 360 40 L 0 40 Z" fill="#0284c7"/>
+        <text x="20" y="26" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">
+          STAGE 1: SECURE INGESTION
+        </text>
+        
+        <rect x="20" y="60" width="320" height="90" rx="6" fill="#f0f9ff" stroke="#bae6fd"/>
+        <text x="35" y="85" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">Cryptographic Digital Pre-Flight</text>
+        <text x="35" y="105" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Finance Dept SHA-256 Sign-off</text>
+        <text x="35" y="125" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Automated 16-Page Imposition</text>
+
+        <rect x="20" y="165" width="320" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="35" y="190" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#334155">Confidentiality Gatekeeper</text>
+        <text x="35" y="210" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Air-gapped secure printing LAN</text>
+        <text x="35" y="230" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Zero public internet exposure</text>
+
+        <rect x="20" y="270" width="320" height="120" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="35" y="295" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#334155">Automated Job Spec Extraction</text>
+        <text x="35" y="315" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Stock: 70 GSM Maplitho Paper</text>
+        <text x="35" y="335" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Dimensions: Quad-Crown 508x762mm</text>
+        <text x="35" y="355" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Recipe transmitted to FoldMaster-16</text>
+
+        <rect x="20" y="410" width="320" height="85" rx="6" fill="#e0f2fe" stroke="#7dd3fc"/>
+        <text x="180" y="440" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#0369a1" text-anchor="middle">SLA: &lt; 2.0 HOURS</text>
+        <text x="180" y="465" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#0284c7" text-anchor="middle">Zero Leakage Protocol</text>
+      </g>
+
+      <!-- Stage 2 -->
+      <g transform="translate(385, 0)">
+        <rect width="360" height="520" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <path d="M 0 10 Q 0 0 10 0 L 350 0 Q 360 0 360 10 L 360 40 L 0 40 Z" fill="#475569"/>
+        <text x="20" y="26" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">
+          STAGE 2: WEB / SHEETFED OFFSET
+        </text>
+
+        <rect x="20" y="60" width="320" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="35" y="85" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">High-Volume Offset Printing</text>
+        <text x="35" y="105" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• 64-page forms on quad-crown</text>
+        <text x="35" y="125" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• 10,000 imp/hr continuous press</text>
+
+        <rect x="20" y="165" width="320" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="35" y="190" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Paper Moisture Dynamics</text>
+        <text x="35" y="210" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Heatset dryer moisture loss</text>
+        <text x="35" y="230" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Static charge accumulation</text>
+
+        <rect x="20" y="270" width="320" height="120" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="35" y="295" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Pallet Conditioning Buffer</text>
+        <text x="35" y="315" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Rapid 20-min aerated chill stack</text>
+        <text x="35" y="335" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Barcode pallet tag synchronization</text>
+        <text x="35" y="355" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Direct forklift feed to Post-Press</text>
+
+        <rect x="20" y="410" width="320" height="85" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+        <text x="180" y="440" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">SLA: 12.0 HOURS</text>
+        <text x="180" y="465" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">50,000 Sheet Offset Batch</text>
+      </g>
+
+      <!-- Stage 3: FoldMaster-16 -->
+      <g transform="translate(770, 0)">
+        <rect width="360" height="520" rx="10" fill="#ffffff" stroke="#10b981" stroke-width="2" filter="url(#drop-shadow)"/>
+        <path d="M 0 10 Q 0 0 10 0 L 350 0 Q 360 0 360 10 L 360 40 L 0 40 Z" fill="#059669"/>
+        <text x="20" y="26" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">
+          STAGE 3: FOLDMASTER-16 MECHATRONICS
+        </text>
+
+        <rect x="20" y="60" width="320" height="90" rx="6" fill="#ecfdf5" stroke="#a7f3d0"/>
+        <text x="35" y="85" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">12,000 Sh/Hr Rotary Infeed</text>
+        <text x="35" y="105" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">• 5.2 kV anti-static discharge</text>
+        <text x="35" y="125" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">• 300 kHz ultrasonic jam rejection</text>
+
+        <rect x="20" y="165" width="320" height="90" rx="6" fill="#ecfdf5" stroke="#a7f3d0"/>
+        <text x="35" y="190" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">16-Page Right-Angle Cross-Fold</text>
+        <text x="35" y="210" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">• 4 buckle plates + 2 servo knives</text>
+        <text x="35" y="230" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">• Inline spine micro-perforation</text>
+
+        <rect x="20" y="270" width="320" height="120" rx="6" fill="#ecfdf5" stroke="#a7f3d0"/>
+        <text x="35" y="295" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">Inline Shingle Collation Stream</text>
+        <text x="35" y="315" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">• Automatic signature batch counter</text>
+        <text x="35" y="335" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">• 0.4% spoilage (vs 8.2% legacy)</text>
+        <text x="35" y="355" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">• Ready for perfect binder infeed</text>
+
+        <rect x="20" y="410" width="320" height="85" rx="6" fill="#d1fae5" stroke="#6ee7b7"/>
+        <text x="180" y="440" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">SLA: 6.5 HOURS</text>
+        <text x="180" y="465" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#047857" text-anchor="middle">50k Signatures Completed</text>
+      </g>
+
+      <!-- Stage 4 -->
+      <g transform="translate(1155, 0)">
+        <rect width="365" height="520" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <path d="M 0 10 Q 0 0 10 0 L 355 0 Q 365 0 365 10 L 365 40 L 0 40 Z" fill="#d97706"/>
+        <text x="20" y="26" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">
+          STAGE 4: BINDING &amp; DISPATCH
+        </text>
+
+        <rect x="20" y="60" width="325" height="90" rx="6" fill="#fffbeb" stroke="#fde68a"/>
+        <text x="35" y="85" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">Automated Saddle Stitch / Bound</text>
+        <text x="35" y="105" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• 3-knife trimmer final dimensioning</text>
+        <text x="35" y="125" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Government seal verification</text>
+
+        <rect x="20" y="165" width="325" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="35" y="190" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#334155">Security Bundling &amp; Shrinkwrap</text>
+        <text x="35" y="210" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Tamper-evident barcode labels</text>
+        <text x="35" y="230" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Geospatial transit logging</text>
+
+        <rect x="20" y="270" width="325" height="120" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="35" y="295" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#334155">Statutory Destination Delivery</text>
+        <text x="35" y="315" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Assam Legislative Assembly (Dispur)</text>
+        <text x="35" y="335" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• Gauhati High Court Registry</text>
+        <text x="35" y="355" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">• 35 District Commissioner HQs</text>
+
+        <rect x="20" y="410" width="325" height="85" rx="6" fill="#fef3c7" stroke="#fcd34d"/>
+        <text x="182" y="440" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">TOTAL SLA: &lt; 48 HOURS</text>
+        <text x="182" y="465" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#92400e" text-anchor="middle">Zero-Delay Gazette Mandate</text>
+      </g>
+    </g>
+
+    <!-- Bottom KPI Strip -->
+    <g transform="translate(40, 695)">
+      <rect width="1520" height="130" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+      <text x="30" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">
+        STATUTORY SLA IMPACT MATRIX (STATE BUDGET 2026-27 BENCHMARK: 120,000 SIGNATURES)
+      </text>
+
+      <g transform="translate(30, 45)">
+        <rect width="345" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Conventional Delivery Time</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">108 Hours (Late Risk)</text>
+      </g>
+      <g transform="translate(405, 45)">
+        <rect width="345" height="65" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#15803d">FoldMaster-16 Delivery Time</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#047857">31.5 Hours (68% Faster)</text>
+      </g>
+      <g transform="translate(780, 45)">
+        <rect width="345" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Emergency Gazette Turnaround</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#0284c7">&lt; 4 Hours Fast-Track</text>
+      </g>
+      <g transform="translate(1155, 45)">
+        <rect width="335" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Sovereign Statutory Compliance</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">100% On-Time Record</text>
+      </g>
+    </g>
+    
+  
+    <!-- Sovereign Footer Attribution -->
+    <rect x="40" y="845" width="1520" height="35" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="60" y="867" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">
+      ROJES LABS · LEAD APPLICANT: ABHISEKH SAHARIA · GRANT: ₹40.0L TOTAL (SOFTWARE/ENGG: ₹20.0L)
+    </text>
+    <text x="1540" y="867" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="end">
+      TECHNOLOGY READINESS LEVEL: TRL-7 · OPERATIONAL AT 12,000 SHEETS/HR · © 2026 ROJES LABS
+    </text>
+    
+</svg>

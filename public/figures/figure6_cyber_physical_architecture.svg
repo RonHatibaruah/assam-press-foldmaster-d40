@@ -1,46 +1,204 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0f172a; font-family:'Inter', system-ui, sans-serif;">
-  <text x="30" y="38" fill="#f8fafc" font-size="18" font-weight="800">FIGURE 6: 4-TIER CYBER-PHYSICAL SYSTEM &amp; TELEMETRY ARCHITECTURE</text>
-  <text x="30" y="60" fill="#94a3b8" font-size="11">Air-gapped industrial automation, deterministic PLC motion control, and local edge dispatch</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" style="background:#ffffff;">
+  <defs>
+    
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.75"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#cbd5e1" stroke-width="1.25"/>
+    </pattern>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#94a3b8" opacity="0.3"/>
+    </pattern>
+    
+    <filter id="drop-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
 
-  <!-- 4 Horizontal Tiers -->
-  <!-- Tier 1: Mechanical -->
-  <g transform="translate(50, 85)">
-    <rect width="860" height="75" rx="6" fill="#1e293b" stroke="#64748b"/>
-    <rect x="0" y="0" width="160" height="22" rx="4" fill="#334155"/>
-    <text x="10" y="15" fill="#cbd5e1" font-size="9" font-weight="700">TIER 1: PHYSICAL HARDWARE</text>
-    <text x="20" y="45" fill="#f8fafc" font-size="11" font-weight="600">Rotary Suction Feeder Head · 4-Plate Buckle Unit · Dual Cross-Fold Knives · Air Compressor</text>
-    <text x="20" y="62" fill="#94a3b8" font-size="10">High-torque brushless DC motors · Pepperl+Fuchs Ultrasonic Sensor · Sick Optical Gates</text>
-  </g>
+  <!-- Technical Background Grid -->
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
 
-  <!-- Tier 2: Real-time PLC -->
-  <g transform="translate(50, 175)">
-    <rect width="860" height="75" rx="6" fill="#134e4a" stroke="#0d9488"/>
-    <rect x="0" y="0" width="200" height="22" rx="4" fill="#0f766e"/>
-    <text x="10" y="15" fill="#ccfbf1" font-size="9" font-weight="700">TIER 2: DETERMINISTIC PLC / MOTION</text>
-    <text x="20" y="45" fill="#f0fdfa" font-size="11" font-weight="600">Industrial PLC (Beckhoff TwinCAT / Siemens S7-1200) · 1 kHz Fast Control Loop</text>
-    <text x="20" y="62" fill="#a7f3d0" font-size="10">24V DC Digital I/O · 40ms Solenoid Valve Trigger · Linear Stepper Actuators · E-Stop Safety Relay</text>
-  </g>
+  
+    <!-- Master Header -->
+    <rect x="40" y="30" width="1520" height="90" rx="12" fill="#0f172a" filter="url(#drop-shadow)"/>
+    <rect x="40" y="30" width="8" height="90" rx="4" fill="#0ea5e9"/>
+    
+    <text x="65" y="62" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" letter-spacing="2">
+      STREAM 1 · NESFIC-D-40 · SYSTEM ARCHITECTURE · FIGURE 6
+    </text>
+    <text x="65" y="94" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" letter-spacing="0.5">
+      FOUR-TIER CYBER-PHYSICAL SYSTEM ARCHITECTURE
+    </text>
+    <text x="65" y="112" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8">
+      End-to-End Retrofit Stack: Physical Mechatronics, Real-Time PLC, Edge Gateway, and Sovereign Cloud
+    </text>
+    
+    <!-- Top Right Meta Badges -->
+    <rect x="1330" y="48" width="210" height="54" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="1435" y="70" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#38bdf8" text-anchor="middle">
+      ASSAM GOVT PRESS
+    </text>
+    <text x="1435" y="88" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">
+      Bamunimaidam, Guwahati
+    </text>
+    
+  
+    <g transform="translate(40, 150)">
+      <!-- Tier 4: Sovereign Cloud -->
+      <g transform="translate(0, 0)">
+        <rect width="1520" height="110" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <rect width="280" height="110" rx="8" fill="#0f172a"/>
+        <text x="30" y="45" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#38bdf8">TIER 4: SOVEREIGN CLOUD</text>
+        <text x="30" y="70" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8">Press MIS &amp; Analytics</text>
+        
+        <g transform="translate(310, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">React Web Dashboard</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Live 100 Hz Telemetry &amp; Alerts</text>
+        </g>
+        <g transform="translate(610, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">OEE Analytics Engine</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Availability, Perf, Quality (88.9%)</text>
+        </g>
+        <g transform="translate(910, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Predictive Maintenance</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Bearing Vibration &amp; Wear MTBF</text>
+        </g>
+        <g transform="translate(1210, 20)">
+          <rect width="280" height="70" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">Statutory SLA Queue</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#047857">State Budget &amp; Gazette Monitor</text>
+        </g>
+      </g>
 
-  <!-- Tier 3: Edge IoT Gateway -->
-  <g transform="translate(50, 265)">
-    <rect width="860" height="75" rx="6" fill="#1e1b4b" stroke="#6366f1"/>
-    <rect x="0" y="0" width="180" height="22" rx="4" fill="#3730a3"/>
-    <text x="10" y="15" fill="#e0e7ff" font-size="9" font-weight="700">TIER 3: IOT EDGE GATEWAY</text>
-    <text x="20" y="45" fill="#ffffff" font-size="11" font-weight="600">Industrial Edge Controller (Raspberry Pi CM4) · RS-485 Modbus RTU @ 50 Hz</text>
-    <text x="20" y="62" fill="#c7d2fe" font-size="10">Python Daemon · Real-time JSON Telemetry Cache · Anomaly Detection · Local MQTT Broker</text>
-  </g>
+      <!-- Tier 3: Edge Gateway -->
+      <g transform="translate(0, 130)">
+        <rect width="1520" height="110" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <rect width="280" height="110" rx="8" fill="#1e293b"/>
+        <text x="30" y="45" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#38bdf8">TIER 3: EDGE GATEWAY</text>
+        <text x="30" y="70" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8">Shop-Floor IPC Hub</text>
 
-  <!-- Tier 4: Local Application & Dispatch -->
-  <g transform="translate(50, 355)">
-    <rect width="860" height="75" rx="6" fill="#042f2e" stroke="#10b981"/>
-    <rect x="0" y="0" width="210" height="22" rx="4" fill="#065f46"/>
-    <text x="10" y="15" fill="#d1fae5" font-size="9" font-weight="700">TIER 4: AIR-GAPPED WEB APPLICATION</text>
-    <text x="20" y="45" fill="#ecfdf5" font-size="11" font-weight="600">FoldMaster Press OS (React 18 + Vite + Tailwind HMI) · Node.js Local Orchestrator</text>
-    <text x="20" y="62" fill="#6ee7b7" font-size="10">Air-Gapped Operation · Zero Content Archival · Cryptographic PIN RBAC · Publication SLA Tracker</text>
-  </g>
+        <g transform="translate(310, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Industrial IPC (Node.js)</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Modbus TCP &lt;-&gt; MQTT Bridge</text>
+        </g>
+        <g transform="translate(610, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Local SQLite Recipe Cache</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">45-120 GSM Caliper Database</text>
+        </g>
+        <g transform="translate(910, 20)">
+          <rect width="280" height="70" rx="6" fill="#f0f9ff" stroke="#7dd3fc"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">Air-Gapped Offline Mode</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#0284c7">100% Fail-Safe Autonomous</text>
+        </g>
+        <g transform="translate(1210, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Cryptographic Token Auth</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Audit Log &amp; Operator Access</text>
+        </g>
+      </g>
 
-  <!-- Side Security Callout -->
-  <rect x="740" y="30" width="170" height="40" rx="4" fill="#7f1d1d" stroke="#ef4444"/>
-  <text x="825" y="48" fill="#fee2e2" font-size="9" font-weight="800" text-anchor="middle">100% AIR-GAPPED</text>
-  <text x="825" y="62" fill="#fecaca" font-size="8" text-anchor="middle">Zero Internet Required</text>
+      <!-- Tier 2: Real-Time Edge Control -->
+      <g transform="translate(0, 260)">
+        <rect width="1520" height="110" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <rect width="280" height="110" rx="8" fill="#0369a1"/>
+        <text x="30" y="45" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">TIER 2: REAL-TIME PLC</text>
+        <text x="30" y="70" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#bae6fd">Deterministic Control</text>
+
+        <g transform="translate(310, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Deterministic Cycle</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">&lt; 1.0 ms Scan Rate (IEC 61131)</text>
+        </g>
+        <g transform="translate(610, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Closed-Loop Stepper Bus</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Deflector Plate Positioning</text>
+        </g>
+        <g transform="translate(910, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Optical Rotary Encoders</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">2,048 PPR Position Tracking</text>
+        </g>
+        <g transform="translate(1210, 20)">
+          <rect width="280" height="70" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">Sub-12ms Reject Logic</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#047857">High-Speed Solenoid Firing</text>
+        </g>
+      </g>
+
+      <!-- Tier 1: Physical Mechatronics -->
+      <g transform="translate(0, 390)">
+        <rect width="1520" height="110" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <rect width="280" height="110" rx="8" fill="#047857"/>
+        <text x="30" y="45" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">TIER 1: MECHATRONICS</text>
+        <text x="30" y="70" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#a7f3d0">Sensors &amp; Actuators</text>
+
+        <g transform="translate(310, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Rotary Suction Drum</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">-0.65 bar Vacuum Valve Head</text>
+        </g>
+        <g transform="translate(610, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">5.2 kV Ionization Bar</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Dual-Polarity Static Discharge</text>
+        </g>
+        <g transform="translate(910, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">300 kHz Ultrasonic Head</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Double-Sheet Acoustic Detector</text>
+        </g>
+        <g transform="translate(1210, 20)">
+          <rect width="280" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Servo Cross-Fold Knives</text>
+          <text x="20" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Dual High-Speed Servo Motors</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom KPI Strip -->
+    <g transform="translate(40, 695)">
+      <rect width="1520" height="130" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+      <text x="30" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">
+        CYBER-PHYSICAL SYSTEM RELIABILITY &amp; INTEGRATION SPECIFICATIONS
+      </text>
+
+      <g transform="translate(30, 45)">
+        <rect width="345" height="65" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#15803d">Telemetry Telemetry Sampling</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#047857">100 Hz Continuous Stream</text>
+      </g>
+      <g transform="translate(405, 45)">
+        <rect width="345" height="65" rx="6" fill="#f0f9ff" stroke="#bae6fd"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#0369a1">Offline Operation Capability</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#0284c7">100% Autonomous Air-Gapped</text>
+      </g>
+      <g transform="translate(780, 45)">
+        <rect width="345" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Protocol Interoperability</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">Modbus TCP / MQTT</text>
+      </g>
+      <g transform="translate(1155, 45)">
+        <rect width="335" height="65" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+        <text x="20" y="25" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#15803d">Cybersecurity Classification</text>
+        <text x="20" y="50" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#047857">Sovereign Classified</text>
+      </g>
+    </g>
+    
+  
+    <!-- Sovereign Footer Attribution -->
+    <rect x="40" y="845" width="1520" height="35" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="60" y="867" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">
+      ROJES LABS · LEAD APPLICANT: ABHISEKH SAHARIA · GRANT: ₹40.0L TOTAL (SOFTWARE/ENGG: ₹20.0L)
+    </text>
+    <text x="1540" y="867" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="end">
+      TECHNOLOGY READINESS LEVEL: TRL-7 · OPERATIONAL AT 12,000 SHEETS/HR · © 2026 ROJES LABS
+    </text>
+    
 </svg>

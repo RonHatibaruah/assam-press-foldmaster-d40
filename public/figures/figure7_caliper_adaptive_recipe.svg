@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" style="background:#ffffff;">
+  <defs>
+    
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.75"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#cbd5e1" stroke-width="1.25"/>
+    </pattern>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#94a3b8" opacity="0.3"/>
+    </pattern>
+    
+    <filter id="drop-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Technical Background Grid -->
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
+  
+    <!-- Master Header -->
+    <rect x="40" y="30" width="1520" height="90" rx="12" fill="#0f172a" filter="url(#drop-shadow)"/>
+    <rect x="40" y="30" width="8" height="90" rx="4" fill="#0ea5e9"/>
+    
+    <text x="65" y="62" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" letter-spacing="2">
+      STREAM 1 · NESFIC-D-40 · RECIPE & CALIPER ENGINE · FIGURE 7
+    </text>
+    <text x="65" y="94" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" letter-spacing="0.5">
+      DYNAMIC SUBSTRATE CALIPER PROFILING & ADAPTIVE ROLL-NIP ENGINE
+    </text>
+    <text x="65" y="112" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8">
+      Automated Closed-Loop Gap Calibration Across 45 to 120 GSM Government Paper Substrates
+    </text>
+    
+    <!-- Top Right Meta Badges -->
+    <rect x="1330" y="48" width="210" height="54" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="1435" y="70" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#38bdf8" text-anchor="middle">
+      ASSAM GOVT PRESS
+    </text>
+    <text x="1435" y="88" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">
+      Bamunimaidam, Guwahati
+    </text>
+    
+  
+    <!-- Top System Workflow Banner -->
+    <g transform="translate(40, 150)">
+      <rect width="1520" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+      <path d="M 0 10 Q 0 0 10 0 L 1510 0 Q 1520 0 1520 10 L 1520 38 L 0 38 Z" fill="#0f172a"/>
+      <text x="25" y="25" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#38bdf8">
+        CLOSED-LOOP CLOSED-GAP CALIPER SENSING &amp; ADAPTIVE STEPPER ACTUATION ARCHITECTURE
+      </text>
+
+      <!-- 3 Operational Steps -->
+      <g transform="translate(30, 55)">
+        <rect width="450" height="140" rx="8" fill="#f0f9ff" stroke="#bae6fd"/>
+        <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#0369a1">
+          STEP 1: OPTICAL &amp; LASER MICROMETER SENSING
+        </text>
+        <text x="20" y="55" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">
+          • Inline dual-beam laser micrometer scans incoming sheet thickness
+        </text>
+        <text x="20" y="75" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">
+          • Dynamic sampling rate: 1,000 readings/sec at 3.3 m/s line speed
+        </text>
+        <text x="20" y="95" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">
+          • Measures thickness across 0.05 mm to 0.16 mm (+/-0.002 mm accuracy)
+        </text>
+        <text x="20" y="115" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#0284c7">
+          Resolution: 2.0 Microns · Instant GSM Classification
+        </text>
+      </g>
+
+      <g transform="translate(510, 55)">
+        <rect width="450" height="140" rx="8" fill="#ecfdf5" stroke="#a7f3d0"/>
+        <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#047857">
+          STEP 2: EDGE AI RECIPE GAP CALCULATION
+        </text>
+        <text x="20" y="55" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">
+          • Mathematical compression model: G_nip = (N_layers * T_sheet) * K_bulk
+        </text>
+        <text x="20" y="75" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">
+          • Adjusts for humidity swelling factor (Delta_RH) in 95% Assam monsoon
+        </text>
+        <text x="20" y="95" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">
+          • Computes target angular steps for eccentric cam bearing actuators
+        </text>
+        <text x="20" y="115" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#059669">
+          Latency: &lt; 8.0 ms DSP Computation · Modbus Broadcast
+        </text>
+      </g>
+
+      <g transform="translate(990, 55)">
+        <rect width="500" height="140" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+        <text x="20" y="30" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e293b">
+          STEP 3: DUAL STEPPER ROLL-NIP POSITIONING
+        </text>
+        <text x="20" y="55" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">
+          • High-torque bipolar stepper motors drive zero-backlash eccentric cams
+        </text>
+        <text x="20" y="75" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">
+          • Precision micrometer position feedback (+/-0.01 mm mechanical repeatability)
+        </text>
+        <text x="20" y="95" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#475569">
+          • Eliminates roller glazing, paper dog-ears, and ink scuffing completely
+        </text>
+        <text x="20" y="115" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#0284c7">
+          Adjustment Duration: &lt; 3.5 Minutes Automated Setup
+        </text>
+      </g>
+    </g>
+
+    <!-- 4 Substrate Preset Benchmark Cards -->
+    <g transform="translate(40, 395)">
+      <!-- Card 1: 45 GSM Gazette -->
+      <g transform="translate(0, 0)">
+        <rect width="360" height="260" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <rect x="0" y="0" width="360" height="35" rx="10" fill="#0284c7"/>
+        <text x="20" y="23" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">
+          45 GSM EXTRAORDINARY GAZETTE
+        </text>
+
+        <text x="20" y="65" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Substrate Class: Light Maplitho</text>
+        <text x="20" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Single Sheet Caliper: 0.054 mm</text>
+        <text x="20" y="115" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• 16-Page Fold Stack: 0.864 mm</text>
+        <text x="20" y="140" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Target Roll Nip Gap: 0.72 mm</text>
+        <text x="20" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Vacuum Level: -0.55 bar (delicate)</text>
+
+        <rect x="20" y="190" width="320" height="50" rx="6" fill="#f0f9ff" stroke="#bae6fd"/>
+        <text x="180" y="212" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">
+          ANTI-TEAR PROTECTION ACTIVE
+        </text>
+        <text x="180" y="228" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#0284c7" text-anchor="middle">
+          Zero web breaks at 12,000 sh/hr
+        </text>
+      </g>
+
+      <!-- Card 2: 60 GSM Textbook -->
+      <g transform="translate(385, 0)">
+        <rect width="360" height="260" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <rect x="0" y="0" width="360" height="35" rx="10" fill="#059669"/>
+        <text x="20" y="23" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">
+          60 GSM SEBA SCHOOL TEXTBOOK
+        </text>
+
+        <text x="20" y="65" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Substrate Class: Standard Book Offset</text>
+        <text x="20" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Single Sheet Caliper: 0.076 mm</text>
+        <text x="20" y="115" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• 16-Page Fold Stack: 1.216 mm</text>
+        <text x="20" y="140" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Target Roll Nip Gap: 1.02 mm</text>
+        <text x="20" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Vacuum Level: -0.65 bar (optimal)</text>
+
+        <rect x="20" y="190" width="320" height="50" rx="6" fill="#ecfdf5" stroke="#a7f3d0"/>
+        <text x="180" y="212" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857" text-anchor="middle">
+          MAX THROUGHPUT TUNED
+        </text>
+        <text x="180" y="228" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#059669" text-anchor="middle">
+          Continuous 12,000 sh/hr running
+        </text>
+      </g>
+
+      <!-- Card 3: 80 GSM High Court -->
+      <g transform="translate(770, 0)">
+        <rect width="360" height="260" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <rect x="0" y="0" width="360" height="35" rx="10" fill="#475569"/>
+        <text x="20" y="23" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">
+          80 GSM HIGH COURT BOND PAPER
+        </text>
+
+        <text x="20" y="65" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Substrate Class: Heavy Bond / Ledger</text>
+        <text x="20" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Single Sheet Caliper: 0.104 mm</text>
+        <text x="20" y="115" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• 16-Page Fold Stack: 1.664 mm</text>
+        <text x="20" y="140" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Target Roll Nip Gap: 1.40 mm</text>
+        <text x="20" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Vacuum Level: -0.72 bar (heavy suction)</text>
+
+        <rect x="20" y="190" width="320" height="50" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+        <text x="180" y="212" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">
+          CREASE PRESSURE BOOSTED
+        </text>
+        <text x="180" y="228" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">
+          Zero spine rebound or opening
+        </text>
+      </g>
+
+      <!-- Card 4: 120 GSM Art Paper -->
+      <g transform="translate(1155, 0)">
+        <rect width="365" height="260" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+        <rect x="0" y="0" width="365" height="35" rx="10" fill="#d97706"/>
+        <text x="20" y="23" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">
+          120 GSM COATED ART PAPER COVER
+        </text>
+
+        <text x="20" y="65" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Substrate Class: Coated Art Stock</text>
+        <text x="20" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Single Sheet Caliper: 0.145 mm</text>
+        <text x="20" y="115" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• 16-Page Fold Stack: 2.320 mm</text>
+        <text x="20" y="140" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Target Roll Nip Gap: 1.95 mm</text>
+        <text x="20" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">• Vacuum Level: -0.78 bar (max vacuum)</text>
+
+        <rect x="20" y="190" width="325" height="50" rx="6" fill="#fffbeb" stroke="#fde68a"/>
+        <text x="182" y="212" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">
+          ANTI-SCUFF AIR BUFFER
+        </text>
+        <text x="182" y="228" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#b45309" text-anchor="middle">
+          Gloss preservation &amp; zero marking
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Engineering Impact Metric Strip -->
+    <g transform="translate(40, 680)">
+      <rect width="1520" height="145" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#drop-shadow)"/>
+      <text x="30" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">
+        EMPIRICAL CALIPER CONTROL OUTCOMES &amp; HARDWARE SPECS
+      </text>
+
+      <g transform="translate(30, 48)">
+        <rect width="345" height="78" rx="6" fill="#f0fdf4" stroke="#86efac"/>
+        <text x="20" y="28" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#15803d">Positioning Repeatability</text>
+        <text x="20" y="58" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#047857">+/- 0.01 mm</text>
+      </g>
+      <g transform="translate(405, 48)">
+        <rect width="345" height="78" rx="6" fill="#f0f9ff" stroke="#bae6fd"/>
+        <text x="20" y="28" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#0369a1">Setup Changeover Time</text>
+        <text x="20" y="58" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#0284c7">&lt; 3.5 Minutes</text>
+      </g>
+      <g transform="translate(780, 48)">
+        <rect width="345" height="78" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="28" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Substrate Thickness Range</text>
+        <text x="20" y="58" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f172a">45 - 120 GSM</text>
+      </g>
+      <g transform="translate(1155, 48)">
+        <rect width="335" height="78" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="28" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Roller Glazing &amp; Scuffing</text>
+        <text x="20" y="58" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#059669">0.00% Zero Defect</text>
+      </g>
+    </g>
+    
+  
+    <!-- Sovereign Footer Attribution -->
+    <rect x="40" y="845" width="1520" height="35" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="60" y="867" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">
+      ROJES LABS · LEAD APPLICANT: ABHISEKH SAHARIA · GRANT: ₹40.0L TOTAL (SOFTWARE/ENGG: ₹20.0L)
+    </text>
+    <text x="1540" y="867" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="end">
+      TECHNOLOGY READINESS LEVEL: TRL-7 · OPERATIONAL AT 12,000 SHEETS/HR · © 2026 ROJES LABS
+    </text>
+    
+</svg>
