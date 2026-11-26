@@ -12,6 +12,9 @@
     <filter id="drop-shadow" x="-5%" y="-5%" width="110%" height="115%">
       <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
     </filter>
+    <filter id="soft-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0284c7" flood-opacity="0.15"/>
+    </filter>
   </defs>
 
   <!-- Technical Background Grid -->
@@ -24,6 +27,33 @@
     <rect x="40" y="30" width="1520" height="90" rx="12" fill="#0f172a" filter="url(#drop-shadow)"/>
     <rect x="40" y="30" width="8" height="90" rx="4" fill="#0ea5e9"/>
     
+    <!-- Top Blueprint Scale Markers & Coordinates -->
+    <g stroke="#94a3b8" stroke-width="1" opacity="0.6">
+      <line x1="40" y1="20" x2="40" y2="28"/>
+      <line x1="140" y1="22" x2="140" y2="28"/>
+      <line x1="240" y1="22" x2="240" y2="28"/>
+      <line x1="340" y1="22" x2="340" y2="28"/>
+      <line x1="440" y1="22" x2="440" y2="28"/>
+      <line x1="540" y1="22" x2="540" y2="28"/>
+      <line x1="640" y1="22" x2="640" y2="28"/>
+      <line x1="740" y1="22" x2="740" y2="28"/>
+      <line x1="840" y1="22" x2="840" y2="28"/>
+      <line x1="940" y1="22" x2="940" y2="28"/>
+      <line x1="1040" y1="22" x2="1040" y2="28"/>
+      <line x1="1140" y1="22" x2="1140" y2="28"/>
+      <line x1="1240" y1="22" x2="1240" y2="28"/>
+      <line x1="1340" y1="22" x2="1340" y2="28"/>
+      <line x1="1440" y1="22" x2="1440" y2="28"/>
+      <line x1="1560" y1="20" x2="1560" y2="28"/>
+    </g>
+    <text x="40" y="16" font-family="Helvetica, Arial, monospace" font-size="9" fill="#64748b" letter-spacing="1">
+      TECHNICAL BLUEPRINT // SCALE: 1:1 // COORDINATES: 26.1856° N, 91.7777° E // FACILITY: BAMUNIMAIDAM GOVT PRESS
+    </text>
+    <text x="1560" y="16" font-family="Helvetica, Arial, monospace" font-size="9" fill="#0284c7" font-weight="bold" text-anchor="end" letter-spacing="1">
+      [TELEM: 100 Hz] [SYSTEM: ONLINE] [TRL: 7]
+    </text>
+
+    <!-- Header Typography -->
     <text x="65" y="62" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" letter-spacing="2">
       STREAM 1 · NESFIC-D-40 · STATUTORY DELIVERY · FIGURE 2
     </text>
@@ -42,6 +72,14 @@
     <text x="1435" y="88" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">
       Bamunimaidam, Guwahati
     </text>
+
+    <!-- Corner Blueprint Registration Crosshairs -->
+    <g stroke="#0284c7" stroke-width="1.5" opacity="0.4">
+      <path d="M 15 25 L 25 25 M 20 20 L 20 30"/>
+      <path d="M 1575 25 L 1585 25 M 1580 20 L 1580 30"/>
+      <path d="M 15 875 L 25 875 M 20 870 L 20 880"/>
+      <path d="M 1575 875 L 1585 875 M 1580 870 L 1580 880"/>
+    </g>
     
   
     <g transform="translate(40, 150)">

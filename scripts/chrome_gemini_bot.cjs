@@ -9,10 +9,10 @@
  *   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 &
  *
  * Usage:
- *   node scripts/chrome_gemini_bot.js
- *   node scripts/chrome_gemini_bot.js --id=figure1
- *   node scripts/chrome_gemini_bot.js --force
- *   node scripts/chrome_gemini_bot.js --port=9222
+ *   node scripts/chrome_gemini_bot.cjs
+ *   node scripts/chrome_gemini_bot.cjs --id=figure1
+ *   node scripts/chrome_gemini_bot.cjs --force
+ *   node scripts/chrome_gemini_bot.cjs --port=9222
  */
 
 const fs = require('fs');
@@ -112,11 +112,6 @@ async function main() {
     await geminiPage.bringToFront();
   }
 
-  // Verify chat interface is ready
-  console.log(`⏳ Checking Gemini chat interface...`);
-  await geminiPage.waitForSelector('rich-textarea, div[contenteditable="true"], textarea', { timeout: 30000 })
-    .catch(() => console.log('⚠️ Notice: Ensure sumanzfilms@gmail.com is signed in.'));
-
   let successCount = 0;
   let failureCount = 0;
 
@@ -138,30 +133,28 @@ async function main() {
       try {
         await geminiPage.goto('https://gemini.google.com/app', { waitUntil: 'networkidle2' });
         await sleep(2500);
-        await geminiPage.waitForSelector('rich-textarea, div[contenteditable="true"], textarea', { timeout: 20000 }).catch(() => {});
+        await geminiPage.waitForSelector('rich-textarea, div.ql-editor, textarea', { timeout: 20000 });
 
         // Record existing image URLs in DOM before sending prompt
         const existingImageUrls = await geminiPage.evaluate(() => {
           return Array.from(document.querySelectorAll('img')).map(img => img.src).filter(Boolean);
         });
 
-        // Format high-impact 16:9 widescreen prompt
-        const promptFull = `Generate a high-quality 16:9 widescreen infographic image: ${item.prompt}`;
+        // Format high-impact 16:9 widescreen prompt exactly as in Data Centers project
+        const promptFull = `Generate a high-impact 16:9 widescreen technological framework infographic image: ${item.prompt}`;
 
+        // Focus Quill editor and insert text using execCommand for Trusted Types & event compliance
+        await geminiPage.focus('div.ql-editor, rich-textarea, textarea');
         await geminiPage.evaluate((text) => {
-          const input = document.querySelector('rich-textarea p, rich-textarea div[contenteditable="true"], div[contenteditable="true"] p, div[contenteditable="true"], textarea');
-          if (input) {
-            input.focus();
-            input.innerText = text;
-            input.dispatchEvent(new Event('input', { bubbles: true }));
-          }
+          document.execCommand('selectAll', false, null);
+          document.execCommand('insertText', false, text);
         }, promptFull);
 
-        await sleep(1200);
+        await sleep(1500);
 
         // Click Send button
         const clicked = await geminiPage.evaluate(() => {
-          const sendBtn = document.querySelector('button[aria-label="Send message"], button.send-button, mat-icon[data-mat-icon-name="send"]')?.closest('button');
+          const sendBtn = document.querySelector('button[aria-label*="Send"], button.send-button, mat-icon[data-mat-icon-name="send"]')?.closest('button');
           if (sendBtn && !sendBtn.disabled) {
             sendBtn.click();
             return true;
@@ -173,14 +166,14 @@ async function main() {
           await geminiPage.keyboard.press('Enter');
         }
 
-        console.log(`   📤 Prompt submitted. Waiting for Imagen 3 generation...`);
+        console.log(`   📤 Prompt submitted to Gemini Pro. Waiting for Imagen 3 generation...`);
         promptSent = true;
 
         // Wait for new generated image to appear in DOM
         let imageBuffer = null;
         let waitAttempts = 0;
 
-        while (!imageBuffer && waitAttempts < 35) {
+        while (!imageBuffer && waitAttempts < 45) {
           await sleep(3000);
           waitAttempts++;
 
@@ -201,7 +194,7 @@ async function main() {
           }, existingImageUrls);
 
           if (newImageData) {
-            console.log(`   🖼️ Image detected in chat (${newImageData.width}x${newImageData.height})! Extracting raw image bytes...`);
+            console.log(`   🖼️ Image detected in chat (${newImageData.width}x${newImageData.height})! Extracting image data...`);
 
             const base64Data = await geminiPage.evaluate((imgSrc) => {
               const img = Array.from(document.querySelectorAll('img')).find(i => i.src === imgSrc);
@@ -221,6 +214,24 @@ async function main() {
 
             if (base64Data) {
               imageBuffer = Buffer.from(base64Data, 'base64');
+            } else {
+              // Fallback: fetch via page fetch
+              try {
+                const dataUri = await geminiPage.evaluate(async (imgSrc) => {
+                  const resp = await fetch(imgSrc);
+                  const blob = await resp.blob();
+                  return new Promise((resolve) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result);
+                    reader.readAsDataURL(blob);
+                  });
+                }, newImageData.src);
+                if (dataUri && dataUri.includes(',')) {
+                  imageBuffer = Buffer.from(dataUri.split(',')[1], 'base64');
+                }
+              } catch (fetchErr) {
+                // ignore
+              }
             }
           }
         }
@@ -229,9 +240,14 @@ async function main() {
           fs.writeFileSync(targetFile, imageBuffer);
           const stats = fs.statSync(targetFile);
           console.log(`   ✅ Successfully saved: public/figures/${item.filename} (${(stats.size / 1024 / 1024).toFixed(2)} MB)`);
+          
+          // Also save as PNG in public/figures/png/
+          const pngFile = path.join(OUTPUT_DIR, 'png', item.filename.replace('.jpg', '.png'));
+          fs.writeFileSync(pngFile, imageBuffer);
+          
           successCount++;
         } else {
-          console.error(`   ⚠️ Timed out waiting for ${item.filename} (105s). Skipping to next...`);
+          console.error(`   ⚠️ Timed out waiting for ${item.filename} (135s). Skipping to next...`);
           failureCount++;
         }
 
@@ -239,6 +255,11 @@ async function main() {
         console.error(`   ⚠️ Error during attempt ${attempts}: ${err.message}`);
         await sleep(3000);
       }
+    }
+
+    if (i < queue.length - 1) {
+      console.log(`   ⏳ Cooling down for 6 seconds before next prompt...`);
+      await sleep(6000);
     }
   }
 
